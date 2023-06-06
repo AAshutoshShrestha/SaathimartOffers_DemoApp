@@ -1,0 +1,35 @@
+{% extends 'views/base.html' %} {% block title %} BY Products{% endblock %} {% block content %}
+
+<div class="container text-center main">
+    <div class="table-responsive">
+        <form action="" method=" get ">
+            {{ filter.form }}
+            <button class="btn btn-primary" type="Submit">Search</button>
+        </form>
+        <table class="table table-hover table-fixed">
+            <tr style="background-color: rgb(250, 128, 128); color: white">
+                <th>category</th>
+                <th>product_name</th>
+                <th>MRP</th>
+                <th>discount_rate</th>
+                <th>status</th>
+                <th>start_date</th>
+                <th>end_date</th>
+            </tr>
+            {% for list in offers %}
+            <tr class="table-hover">
+                <td scope="row">{{list.category}}</td>
+                <td>{{list.product_name}}</td>
+                <td>{{list.MRP}}</td>
+                <td style="background-color: rgb(255, 241, 214)">
+                    {{list.discount_rate}}
+                </td>
+                <td>{{list.status}}</td>
+                <td>{{list.start_date}}</td>
+                <td>{{list.end_date}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

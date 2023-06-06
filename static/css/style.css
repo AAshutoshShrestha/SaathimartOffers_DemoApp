@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    color: orange;
+}
+
+.nav-item a:hover {
+    color: green;
+}
+
+.container {
+    margin-top: 2px;
+}
+
+.main {
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.row {
+    width: 25vw;
+    padding-top: 16px;
+}
+
+span {
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+form {
+    margin-top: 10px;
+}
